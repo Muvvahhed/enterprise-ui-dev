@@ -1,4 +1,4 @@
-import { it, expect, test } from 'vitest';
+import { it, expect, test, describe } from 'vitest';
 
 it('should work', () => {
   expect(true).toBe(true);
@@ -11,6 +11,11 @@ test('works witn "test" as well', () => {
 it.fails('should be able to expect a test to fail', () => {
   expect(false).toBe(true);
 });
+
+// test('banana is good', () => {
+//   expect.hasAssertions();
+
+// });
 
 test('works when returning a promise', () => {
   return new Promise((done) => {
